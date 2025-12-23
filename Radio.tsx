@@ -1,11 +1,25 @@
+import { radioStations } from "@/data/radioStations";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Radio, Play, Pause, Volume2, Headphones, Clock, ChevronRight, Heart } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const radioStations = [
-  { id: 1, name: "Afrobeats FM", genre: "Afrobeats", listeners: "25K", live: true, frequency: "98.5 FM", host: "DJ Spinall", image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=600&h=400&fit=crop", description: "Non-stop Afrobeats hits from Nigeria, Ghana, and beyond." },
+
+  {{
+  id: 16, // make sure this ID is unique
+  name: "Sanyu FM",
+  genre: "Afrobeats",
+  listeners: "—", // you can update later
+  live: true,
+  frequency: "88.2 FM",
+  host: "Sanyu FM DJs",
+  image: "https://cdn.instant.audio/images/logos/radio-co-ug/sanyu.png",
+  description: "Uganda’s home of Afrobeat, urban hits, and nonstop entertainment.",
+  streamUrl: "https://s44.myradiostream.com:8138/stream/1/"
+}
+
+    id: 1, name: "Afrobeats FM", genre: "Afrobeats", listeners: "25K", live: true, frequency: "98.5 FM", host: "DJ Spinall", image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=600&h=400&fit=crop", description: "Non-stop Afrobeats hits from Nigeria, Ghana, and beyond." },
   { id: 2, name: "Diaspora Radio", genre: "Talk Show", listeners: "18K", live: true, frequency: "Online", host: "Aunty Funke", image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=600&h=400&fit=crop", description: "Conversations and stories from Africans living abroad." },
   { id: 3, name: "Roots & Rhythm", genre: "Traditional", listeners: "10K", live: false, frequency: "101.3 FM", host: "Papa Wemba Jr", image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&h=400&fit=crop", description: "Traditional African music from all 54 countries." },
   { id: 4, name: "Amapiano Central", genre: "Amapiano", listeners: "32K", live: true, frequency: "Online", host: "DJ Maphorisa", image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&h=400&fit=crop", description: "The hottest Amapiano tracks from South Africa." },
